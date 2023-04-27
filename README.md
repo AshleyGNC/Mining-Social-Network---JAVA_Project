@@ -1,5 +1,6 @@
 # Mining-Social-Network---JAVA_Project
 Project name: Mining Social Network
+
 In this project, we would analyze social network data. The opportunities for learning are
 practically endless in a social network. Who are the “influential” members of the
 network? What are the sub-communities in the network? Who is connected to whom,
@@ -18,6 +19,7 @@ much smaller graph size instead of the larger ones. All of the files can be foun
 starter code’s data folder.
 
 About the starter code
+
 In the starter code, the Graph.java implements an adjacency list graph representation.
 Each of its API is described in the comments, and can be used in your graph processing
 algorithms. Also, please feel free to add your own APIs if needed. The
@@ -37,6 +39,7 @@ another IDE or manually compile and run your programs. If you need help, Google 
 your friend.
 
 Questions to answer:
+
 1. How powerful your personal network is?
 To answer this question, we first need to build the personal network. Ego network is
 used to represent the personal network, and it consists of a focal node ("ego") and the
