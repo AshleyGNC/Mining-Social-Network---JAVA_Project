@@ -1,4 +1,4 @@
-# Mining-Social-Network---JAVA_Project
+# Mining-Social-Network--JAVA_Project
 Project name: Mining Social Network
 
 In this project, we would analyze social network data. The opportunities for learning are
