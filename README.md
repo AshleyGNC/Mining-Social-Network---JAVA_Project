@@ -19,18 +19,17 @@ have an algorithm with a large runtime, it may be helpful to use file TinySample
 much smaller graph size instead of the larger ones. All of the files can be found in the
 starter code’s data folder.
 
-About the starter code
+About the code files
 
-In the starter code, the Graph.java implements an adjacency list graph representation.
+The Graph.java implements an adjacency list graph representation.
 Each of its API is described in the comments, and can be used in your graph processing
-algorithms. Also, please feel free to add your own APIs if needed. The
-GraphLoader.java is provided to read the file and construct the graph accordingly. The
+algorithms. Also, please feel free to add your own APIs if needed. 
+The GraphLoader.java is provided to read the file and construct the graph accordingly. The
 GraphTester.java is used to test all the algorithms you implement by printing out the
 analysis results. Your output should be the same as the expected results shown in the
 end of this instruction.
 
-All other files including Ego.java, Center.java, CC.java, Influence.java and
-Diameter.java are the skeleton codes where you can apply your code to implement
+All other files including Ego.java, CC.java, and Influence.java are the skeleton codes where you can apply your code to implement
 specific APIs which would be called in the GraphTester.java to analyze the social
 network data from differents aspect. Each class is used by clients to answer one
 question about the data.
