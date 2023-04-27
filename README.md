@@ -78,35 +78,28 @@ The nested class influencer is provided, which contains the id of the influencer
 its power calculated by its reachability.
   
   
-  3. How important you are within the network?
-  One main factor for determining the most important members of a network is an
-individual’s location between different sections of a network, which is called
-betweenness centrality. In graph theory, betweenness centrality is based on shortest
-paths. The betweenness centrality for each vertex is the number of shortest paths that
-pass through the vertex. Calculating the betweenness centralities of all the vertices in a
-graph involves calculating the shortest paths between all pairs of vertices on a graph.
-  
-For example, in the following graph, the node 1 exists in the flowing 20 shortest paths:
-1->2, 1->3, 1->4, 1->5, 2->1, 2->3, 2->1->4, 2->1->5, 3->1, 3->1->2, 3->1->4, 3->1->5,
-4->1, 4->1->2, 4->1->3, 4->1->5, 5->1, 5->1->2, 5->1->3, 5->1->4. This node is
-considered as the most important node in the graph with the highest betweenness
-centrality.
-  
-  Vertices with higher betweenness is more important within a network by virtue of their
-control over information passing between others. They are also the ones whose
-removal from the network will most disrupt communications between other vertices
-because they lie on the largest number of paths taken by messages. The closer a
-person is to the center of the graph, the more visibility they have across multiple
-verticals.
-  
-  Your task is to implement the Center class in Center.java file to return the more k
-important person in the facebook data set by writing the following APIs.
+  3. How many communities in the network?
+The simplest way to detect communities in a network represented as a graph is to find
+all connected components, which is a maximal set of vertices such that every vertex is
+reachable from every other vertex. Based on this idea, we can define a community as a
+group of elements where each element can communicate with other elements: this
+reflects the fact that there is always a bidirectional flow that connects two elements of a
+community.
 
-  ● public Center(Graph g): this is the constructor to build the data structure that stores
-all students and their betweenness centralities from graph g in a sorted order
+Your task is to implement the CC class in CC.java file to return the biggest k
+communities in the facebook data set by writing the following APIs.
 
-  ● public List<center> top(int k): this is the method to return the most important k person. The nested class center is provided, which contains the id of the person and its betweenness centrality.
+● public CC(Graph g): this is the constructor to build the data structure that stores all
+connected components that represent the communities from graph g in a sorted
+order. Here, we only need to store the id and the size of each connected component.
 
+● public int count(): this is the method to return the number of connected component.
+
+● public List<cc> top(int k): this is the method to return the biggest k communities.
+The nested class cc is provided, which contains the id of the community and its size
+
+  
+  
   
   
   
