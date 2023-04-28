@@ -6,6 +6,7 @@ practically endless in a social network. Who are the “influential” members o
 network? What are the sub-communities in the network? Who is connected to whom,
 and by how many links? To answer these questions, you would be asked to analyze a
 real-world social network data set by implementing a couple of graph algorithms.
+
 About the data
 
 The data set we use contains the Facebook friendships between 2000 students at an
